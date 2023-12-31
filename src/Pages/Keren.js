@@ -95,7 +95,7 @@ export default function Keren() {
                             Tantangan Terbesar dalam Hubungan Ini
                         </AccordionHeader>
                         <AccordionBody className="pt-0 text-base font-normal">
-                            Diawal adalah aku belum memahami sifat kamu itu kayak gimana, jadi perlu adaptasi dulu dengan sifat sifat kamu. Selain itu,
+                            Diawal mungkin aku belum memahami sifat kamu itu kayak gimana, jadi perlu adaptasi dulu dengan sifat sifat kamu. Selain itu,
                             Ini adalah first time aku benar benar cinta dan komitmen dengan orang, jadi aku pun perlu mengerti gimana caranya aku menyikapi sesuatu beda dari biasanya.
                             Tantangan saat ini adalah karena kamu suka tiba tiba nanya kamu sayang aku ga? Jadi aku harus tetap sabar menjawab <strong>IYAA SAYANG AKU SAYANG KAMUUU POREPER ❤️</strong>
                         </AccordionBody>
@@ -110,7 +110,7 @@ export default function Keren() {
                             Momen Paling Bahagia Arya with Elvira
                         </AccordionHeader>
                         <AccordionBody className="pt-0 text-base font-normal">
-                            Lah ini mah mirip, momen paling bahagia aku setiap kali kita bareng, entah jalan, makan bareng, ngewarnet di perpus bareng, atau hanya sekadar ngobrol di kelas.
+                            Lah ini mah mirip, momen paling bahagia aku setiap kali kita bareng, entah jalan, makan bareng, ngewarnet di perpus bareng, atau hanya sekadar ngobrol di kelas. Maybe untuk yang paling adalah saat kita jalan ke blok m bareng rafa ares ataupun ke UI waktu makan mie hehehehe jadi kangennn huhu.
                             Maybe saat ini aku sadar, bahwa aku selalu senang ketika menghabiskan waktu bersama walaupun itu hanya sekadar ngobrol
                         </AccordionBody>
                     </Accordion>
@@ -132,13 +132,13 @@ export default function Keren() {
                     <CardFlip
                         textFront={"KESAN"}
                         textBack={
-                            "Sebelum nulis ini aku sempat searching dulu apa itu kesan pesan. Sekarang aku paham kesan ini adalah sesuatu yang aku rasain selama ini. Seperti yang aku jelasin sebelumnya, terima kasih banyak banyak el, dengan aku sama kamu hatiku tenang entah kenapa, aku bangun setiap harinya dengan perasaan senang dan maybe semangat karena tiap hari aku harus berhadapan dengan orang cantik, gajelas, dan yang utama ANEH. Aku selalu suka setiap kita ngobrol soal hal gajelas sekalipun, sampai ke funfact funfactan. Aku juga seneng setiap kamu nanya KAMU SAYANG AKU GA? walaupun jawaban aku selalu sama IYA SAYANGGG, maybe next aku harus buat if(elvira nanya aku sayang kamu){jawab iya sayang}, aku juga senang ketika kamu semangatin aku setiap segala hal yang aku lakukan. Aku juga suka kalo kamu ngabarin aku dengan kirim foto atau bahkan vn aku. Aku juga suka kalo kamu marah. WKWKWK KAYAKNYA AKU SUKA SEMUA DARI KAMU DEH. Oiya aku gasuka kalo kamu tiba tiba ajak aku putus HUH, KOMUNIKASI NUMERO UNO"
+                            "Sebelum nulis ini aku sempat searching dulu apa itu kesan pesan. Sekarang aku paham kesan ini adalah sesuatu yang aku rasain selama ini. Seperti yang aku jelasin sebelumnya, Terima kasih banyak banyak el, dengan aku sama kamu hatiku tenang entah kenapa, aku bangun setiap harinya dengan perasaan senang dan maybe semangat karena tiap hari aku harus berhadapan dengan orang cantik, gajelas, dan yang utama ANEH. Aku selalu suka setiap kita ngobrol soal hal gajelas sekalipun, sampai ke funfact funfactan. Aku juga seneng setiap kamu nanya KAMU SAYANG AKU GA? walaupun jawaban aku selalu sama IYA SAYANGGG, maybe next aku harus buat if(elvira nanya aku sayang kamu){jawab iya sayang}, aku juga senang ketika kamu semangatin aku setiap segala hal yang aku lakukan. Aku juga suka kalo kamu ngabarin aku dengan kirim foto atau bahkan vn aku. Aku juga suka kalo kamu marah. WKWKWK KAYAKNYA AKU SUKA SEMUA DARI KAMU DEH. Oiya aku gasuka kalo kamu tiba tiba ajak aku putus HUH, KOMUNIKASI NUMERO UNO"
                         }
                     />
                     <CardFlip
                         textFront={"PESAN"}
                         textBack={
-                            "Sayang, kalau nanti kita ada masalah, ngomong, kalau nanti salah satu dari kita bosen, ngomong, kalo ada yang kamu gasuka dari aku, ngomong. Dari situ aku berharap kita bisa introspeksi diri kita jadi lebih baik lagi. Pesan aku selanjutnya adalah LOVE YOUU SOOOO MUCHHH CANTIKKKKKKK ❤️❤️❤️❤️❤️❤️"
+                            "Sayang, kalau nanti kita ada masalah, ngomong, kalau nanti salah satu dari kita bosen, ngomong, kalo ada yang kamu gasuka dari aku, ngomong. Dari situ aku berharap kita bisa introspeksi diri kita jadi lebih baik lagi. Pesan aku selanjutnya adalah STOP OVT!!! I LOVE YOUU SOOOO MUCHHH CANTIKKKKKKK ❤️❤️❤️❤️❤️❤️"
                         }
                     />
                 </div>
