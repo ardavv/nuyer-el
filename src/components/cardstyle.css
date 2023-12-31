@@ -27,18 +27,30 @@
     box-shadow: 6px 6px lightseagreen;
     color: black;
   }
+
+  .flip-front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 150px;
+    backface-visibility: hidden;  
+    color: #fff;  
+    background-color: pink;
+    border: 6px solid lightcoral;
+    box-shadow: 6px 6px lightseagreen;
+    color: black;
+    display: flex; /* biar bisa pake justify-content dan align-items */
+    justify-content: center; /* biar textnya center horizontal */
+    align-items: center;
+    font-size: 3vw;
+  }
+  
   .flip-back {
     transform: rotateY(180deg);
     border: 6px solid lightseagreen;
     box-shadow: 6px 6px lightcoral;
     line-height: 30px;
     text-align: left;
-  }
-
-  .text {
-    width: 100%;
-    height: 100%;
-    font-weight: bold;
-    font-size: xx-large;
-    text-align: center;
-  }
+    font-size: small;
+    overflow: hidden;
+}

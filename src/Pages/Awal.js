@@ -1,27 +1,35 @@
-import fotoone from '../img/badut.jpg'
-import CardBulet from '../components/CardBulet'
-import CardDefault from '../components/CardDefault'
-import DarkMode from '../components/DarkMode/DarkMode'
+import { useState } from "react";
+import pic from '../img/gigit.png'
+import { Link } from "react-router-dom";
 
 export default function Awal() {
 
+    const [isPageVisible, setPageVisibility] = useState(false);
+    const [isPageBlack, setPageColor] = useState(true);
+
+    const handleButtonClick = () => {
+        setPageVisibility(!isPageVisible);
+        setPageColor(!isPageBlack);
+    };
 
     return (
         <>
-
-            <h2 className=" gap-4">Home Page</h2>
-            <div className=' grid grid-cols-3 gap-5'>
-                <CardDefault imageUrl={fotoone} />
-                <CardDefault imageUrl={fotoone} />
-                <CardDefault imageUrl={fotoone} />
-
+            <div>
+                <button onClick={handleButtonClick} className="text-white bg-gray-800 p-2 m-4 rounded">
+                    Klik Disini
+                </button>
+                {isPageVisible && (
+                    <div className='min-h-screen flex justify-center items-center transition duration-500 ease-in-out flex-col'>
+                        {/* Your page content goes here */}
+                        <Link to="/newyear">
+                            <button className="text-white bg-gray-800 p-2 m-4 rounded">
+                                Next Page
+                            </button>
+                        </Link>
+                        <img src={pic} alt="Centered Img" />
+                    </div>
+                )}
             </div>
-
-
-            
-            <DarkMode/>
-
-
         </>
     )
 }
