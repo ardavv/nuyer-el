@@ -1,4 +1,4 @@
-import badut from '../img/badut.jpg'
+import badut from '../img/ucokbadut.jpg'
 
 
 
