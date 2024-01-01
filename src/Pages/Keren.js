@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom"
+import ReactPlayer from "react-player";
 import {
     Accordion,
     AccordionHeader,
@@ -15,9 +16,28 @@ export default function Keren() {
 
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
+    const [isAudioReady, setIsAudioReady] = useState(false);
+
+    const handleAudioReady = () => {
+        setIsAudioReady(true);
+    };
+
     return (
         <>
             <div style={{ backgroundImage: `url(${bg})` }} className="bg-cover flex flex-col justify-center items-center ">
+                <ReactPlayer
+                    url="link-audio-lu.mp3"
+                    playing
+                    loop
+                    width="0"
+                    height="0"
+                    onReady={handleAudioReady}
+                />
+                {isAudioReady ? (
+                    <p>Audio dapat diputar.</p>
+                ) : (
+                    <p>Audio sedang dimuat...</p>
+                )}
 
                 <div className="flex flex-col justify-center items-center w-3/6 mx-auto">
                     <Accordion open={open === 1} className="mb-2 rounded-lg border border-blue-gray-100 px-4 bg-pink-100">
