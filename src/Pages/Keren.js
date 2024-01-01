@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom"
 import ReactPlayer from "react-player";
+import sounNya from '../components/audio/bekson.mp3'
 import {
     Accordion,
     AccordionHeader,
@@ -26,12 +27,13 @@ export default function Keren() {
         <>
             <div style={{ backgroundImage: `url(${bg})` }} className="bg-cover flex flex-col justify-center items-center ">
                 <ReactPlayer
-                    url="link-audio-lu.mp3"
+                    url={sounNya}
                     playing
                     loop
                     width="0"
                     height="0"
                     onReady={handleAudioReady}
+                    onError={(error) => console.error('Error playing audio:', error)}
                 />
                 {isAudioReady ? (
                     <p>Audio dapat diputar.</p>
