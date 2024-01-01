@@ -1,6 +1,5 @@
-import React, {useState} from "react";
+import React from "react";
 import { Link } from "react-router-dom"
-import ReactPlayer from "react-player";
 import sounNya from '../components/audio/bekson.mp3'
 import {
     Accordion,
@@ -13,33 +12,24 @@ import bg from '../img/bubududu.jpg'
 import CardFlip from '../components/CardFlip'
 
 export default function Keren() {
+
+    function play(){
+        new Audio(sounNya).play()
+    }
+
     const [open, setOpen] = React.useState(1);
 
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
-    const [isAudioReady, setIsAudioReady] = useState(false);
-
-    const handleAudioReady = () => {
-        setIsAudioReady(true);
-    };
-
     return (
         <>
             <div style={{ backgroundImage: `url(${bg})` }} className="bg-cover flex flex-col justify-center items-center ">
-                <ReactPlayer
-                    url={sounNya}
-                    playing
-                    loop
-                    width="0"
-                    height="0"
-                    onReady={handleAudioReady}
-                    onError={(error) => console.error('Error playing audio:', error)}
-                />
-                {isAudioReady ? (
-                    <p>Audio dapat diputar.</p>
-                ) : (
-                    <p>Audio sedang dimuat...</p>
-                )}
+                
+                <button onClick={play} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded mt-4 mb-4">
+
+                    Play Music
+
+                </button>
 
                 <div className="flex flex-col justify-center items-center w-3/6 mx-auto">
                     <Accordion open={open === 1} className="mb-2 rounded-lg border border-blue-gray-100 px-4 bg-pink-100">
@@ -165,7 +155,7 @@ export default function Keren() {
                     />
                 </div>
                 <div>
-                    <Link to="/newyear"><button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded'>
+                    <Link to="/newyear"><button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded mb-4'>
                         KLIK DISINI BUAT KE COUNTDOWN TAHUN BARU
                     </button>
                     </Link>
